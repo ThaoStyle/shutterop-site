@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="no-referrer" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'" />
+  <title>Công thức màu — ShutterOP</title>
+  <!--
+    Trang mở công thức màu từ mã QR (D-383). Một tệp tự đủ, không tải gì từ ngoài, không theo dõi.
+    Dữ liệu công thức nằm sau dấu # nên trình duyệt không gửi lên máy chủ; trang chỉ chuyển nó cho app.
+  -->
+  <style>
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #050706 radial-gradient(120% 70% at 50% 0%, #17573a 0%, #050706 70%) no-repeat;
+      color: #ffffff;
+      font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      text-align: center;
+    }
+    main { max-width: 420px; margin: 0 auto; padding: 56px 24px 40px; }
+    img { width: 88px; height: 88px; }
+    .brand { margin: 8px 0 0; font-size: 20px; font-weight: 800; letter-spacing: -0.3px; }
+    .brand span { color: #00d86a; }
+    h1 { margin: 28px 0 8px; font-size: 24px; line-height: 1.3; }
+    p { margin: 0; color: #b5c4bc; }
+    a.button {
+      display: block;
+      margin-top: 24px;
+      padding: 15px 20px;
+      border-radius: 18px;
+      font-weight: 700;
+      font-size: 16px;
+      text-decoration: none;
+      color: #ffffff;
+    }
+    a.primary { background: #00a651; }
+    a.secondary { margin-top: 12px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.18); }
+    .small { margin-top: 14px; font-size: 13px; color: #8fa097; }
+    .ask { margin-top: 32px; }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="data:image/png;base64,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" alt="" />
+    <div class="brand">Shutter<span>OP</span></div>
+
+    <noscript><p style="margin-top:28px">Cần bật JavaScript để mở công thức. / Turn on JavaScript to open this recipe.</p></noscript>
+
+    <h1 id="title"></h1>
+    <p id="intro"></p>
+    <a id="open" class="button primary" hidden></a>
+    <p id="version" class="small" hidden></p>
+
+    <p id="ask" class="ask"></p>
+    <a id="store" class="button secondary" href="https://apps.apple.com/app/id6825207408" hidden></a>
+    <p id="android" class="small" hidden></p>
+    <p id="help" class="small" hidden></p>
+  </main>
+
+  <script>
+    (function () {
+      var TEXT = {
+        vi: {
+          page: "Công thức màu — ShutterOP",
+          title: "Công thức màu ShutterOP",
+          intro: "Mở bằng app để xem trước và áp công thức này lên ảnh của bạn.",
+          open: "Mở trong ShutterOP",
+          version: "Cần ShutterOP 1.0.6 trở lên.",
+          ask: "Chưa có app?",
+          store: "Tải trên App Store",
+          android: "Bản Android chưa có trên Google Play.",
+          help: "Nút không chạy? Hãy mở trang này bằng Safari hoặc trình duyệt của máy.",
+          badTitle: "Liên kết không đầy đủ",
+          badIntro: "Hãy quét lại mã QR trên thẻ công thức."
+        },
+        en: {
+          page: "Colour recipe — ShutterOP",
+          title: "A ShutterOP colour recipe",
+          intro: "Open it in the app to preview this recipe and apply it to your photo.",
+          open: "Open in ShutterOP",
+          version: "Requires ShutterOP 1.0.6 or later.",
+          ask: "Don't have the app?",
+          store: "Download on the App Store",
+          android: "The Android version is not on Google Play yet.",
+          help: "Button not working? Open this page in Safari or your device's browser.",
+          badTitle: "This link is incomplete",
+          badIntro: "Scan the QR code on the recipe card again."
+        }
+      };
+      var language = /^vi\b/i.test(navigator.language || "") ? "vi" : "en";
+      var text = TEXT[language];
+      var isAndroid = /android/i.test(navigator.userAgent);
+      var byId = function (id) { return document.getElementById(id); };
+
+      function show(id, value, visible) {
+        byId(id).textContent = value;
+        byId(id).hidden = !visible;
+      }
+
+      function render() {
+        // Cùng luật với app: phiên bản, gạch dưới, base64url; tối đa 2900 ký tự
+        var data = location.hash.slice(1);
+        var valid = data.length <= 2900 && /^v\d{1,4}_[A-Za-z0-9_-]+$/.test(data);
+        document.documentElement.lang = language;
+        document.title = text.page;
+        byId("title").textContent = valid ? text.title : text.badTitle;
+        byId("intro").textContent = valid ? text.intro : text.badIntro;
+        show("open", text.open, valid);
+        if (valid) byId("open").href = "shutterop://r/" + data;
+        else byId("open").removeAttribute("href");
+        show("version", text.version, valid);
+        byId("ask").textContent = text.ask;
+        show("store", text.store, !isAndroid);
+        show("android", text.android, isAndroid);
+        show("help", text.help, valid);
+      }
+
+      window.addEventListener("hashchange", render);
+      render();
+    })();
+  </script>
+</body>
+</html>
